@@ -1,0 +1,137 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #ccc;
+    color: #000;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:sans-serif;
+    
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    width: 95%;
+    height: 95%;
+    padding: 20px;
+    border: 5px solid #000;
+    
+}
+.top{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    background-color:wheat;
+}
+.top h1{
+    margin: 20px;
+    font-size: 36px;
+}
+.main__box{
+    background-color: cornsilk;
+    margin-top: 20px;
+    padding-top: 20px;
+    width: auto;
+    height: 150%;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: auto;
+   
+}
+.item__box{
+    width: 300px;
+    height: 200px;
+    margin-right: 20px;
+}
+.item__box .item{
+    min-height: 150px;
+    position: relative;
+    text-align: center;
+    background-color: wheat;
+}
+
+.btns__box{
+    margin-top: 20px;
+    /* display: flex;
+    justify-content: space-between; */
+    width: auto;
+    height: 20%;
+
+}
+.btn{
+    padding: 10px 45px;
+    background-color: rgb(94 197 118);
+    outline: none;
+    border: none;
+    border-radius: 50px;
+   
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: yellowgreen;
+    transition:all 1s;
+}
+.btn__close{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 30px;
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    cursor: pointer;
+    color: #f44336;
+}
+.btn__top{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 30px;
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    cursor: pointer;
+    color: #f44336;
+}
+
+.modal{
+    background-color:wheat;
+    height: 300px;
+    width: 320px;
+    position: fixed;
+    top: 25%;
+    left: 35%;
+    text-align: center;
+    z-index: 1000;
+    transition: all 3s;
+}
+textarea{
+    width:280px ;
+    resize: none;
+    padding-top: 5px;
+    margin-top: 40px;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.hidden{
+    display: none;
+}
+

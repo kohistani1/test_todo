@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo Test</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./main.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <h1>Welcome to App</h1>
+        </div>
+        <div class="main__box">
+            <div class="item__box">
+                <div class="item">
+                    <button class="btn__close" data-row="1">X</button>
+                    <h5>Welcome Write here Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem error eum
+                        temporibus vero consequatur minima repellat autem, ex eveniet veritatis dolor ut ullam molestias,
+                        numquam atque voluptates nostrum suscipit fugit?</h5>
+                </div>
+            </div>
+            <div class="item__box">
+                <div class="item">
+                    <button class="btn__close" data-row="1">X</button>
+                    <h5>Welcome Write here Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem error eum
+                        temporibus vero consequatur minima repellat autem, ex eveniet veritatis dolor ut ullam molestias,
+                        numquam atque voluptates nostrum suscipit fugit?</h5>
+                </div>
+            </div>
+         
+        </div>
+        <div class="btns__box">
+            <button class="btn btn--add">Add</button>
+            <button class="btn btn--clear">Clear Notes</button>
+        </div>
+
+        <div class="modal hidden">
+            <button class="btn__modal__close btn__top">X</button>
+            <textarea name="" id="txt_A__add__el" cols="30" rows="10" placeholder="YOUR NEW ITEM"></textarea>
+            <button class="btn add__item">Add Note</button>
+            <button class="btn btn__modal__close">Cancel</button>
+        </div>
+        <div class="overlay hidden"></div>
+    </header>
+</body>
+
+</html>
